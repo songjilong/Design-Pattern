@@ -7,33 +7,18 @@ import org.junit.Test;
  * @create 2020/4/2 23:50
  */
 public class Client {
+    /**
+     * 点一杯 加两份糖一份牛奶的摩卡咖啡
+     */
     @Test
-    public void test01(){
-        SugarDecorator sugarLatteCoffee = new SugarDecorator(new LatteCoffee());
-        System.out.println(sugarLatteCoffee.getDes());
-        System.out.println("共$" + sugarLatteCoffee.cost());
-        System.out.println("==================");
-        MilkDecorator milkMochaCoffee = new MilkDecorator(new MochaCoffee());
-        System.out.println(milkMochaCoffee.getDes());
-        System.out.println("共$" + milkMochaCoffee.cost());
-    }
-
-    @Test
-    public void test02(){
-        Drink order = new MochaCoffee();
-        System.out.println(order.getDes());
-        System.out.println("共$" + order.cost());
-
+    public void test01() {
+        Coffee order = new MochaCoffee();
+        System.out.println(order.getDes() + "，价格：" + order.cost());
+        //加两份糖
+        order = new SugarDecorator(new SugarDecorator(order));
+        System.out.println(order.getDes() + "，价格：" + order.cost());
+        //加一份牛奶
         order = new MilkDecorator(order);
-        System.out.println(order.getDes());
-        System.out.println("共$" + order.cost());
-
-        order = new MilkDecorator(order);
-        System.out.println(order.getDes());
-        System.out.println("共$" + order.cost());
-
-        order = new SugarDecorator(order);
-        System.out.println(order.getDes());
-        System.out.println("共$" + order.cost());
+        System.out.println(order.getDes() + "，价格：" + order.cost());
     }
 }
