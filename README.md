@@ -17,6 +17,7 @@ src
     │  ├─factory   - 工厂模式（包含抽象工厂）
     │  ├─flyweight - 享元模式
     │  ├─iterator  - 迭代器模式
+    │  ├─mediator  - 中介者模式
     │  ├─observer  - 观察者模式
     │  ├─proxy     - 代理模式
     │  └─singleton - 单例模式
