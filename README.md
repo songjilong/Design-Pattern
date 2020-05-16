@@ -24,6 +24,7 @@ src
     │  ├─proxy       - 代理模式
     │  └─singleton   - 单例模式
     │  └─state       - 状态模式
+    │  └─strategy    - 策略模式
     │  └─template    - 模板模式
     │  └─visitor     - 访问者模式
     └─note        - 各个模式的笔记（工厂、抽象工厂、原型、建造者模式都在「创建型模式总结.md」中）
