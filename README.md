@@ -10,6 +10,7 @@ src
     │  ├─adapter     - 适配器模式
     │  ├─bridge      - 桥接模式
     │  ├─builder     - 建造者模式
+    │  ├─chain       - 职责链模式
     │  ├─command     - 命令模式
     │  ├─composite   - 组合模式
     │  ├─decorator   - 装饰者模式
