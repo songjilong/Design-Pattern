@@ -1,7 +1,9 @@
 # 简介
-23种设计模式，Java代码实现以及每种模式的总结笔记，持续更新中...
+23种设计模式，使用 Java 实现，内附每种模式的总结笔记
 
-![](https://gitee.com/songjilong/FigureBed/raw/master/img/20200319180103.png)
+# 结构图
+
+![](./img/23种设计模式.png)
 
 # 目录
 ```text
@@ -28,5 +30,5 @@ src
     │  └─strategy    - 策略模式
     │  └─template    - 模板模式
     │  └─visitor     - 访问者模式
-    └─note        - 各个模式的笔记（工厂、抽象工厂、原型、建造者模式都在「创建型模式总结.md」中）
+    └─note        - 各个模式的笔记
 ```
